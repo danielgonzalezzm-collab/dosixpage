@@ -91,16 +91,15 @@ margin:auto;
 }
 
 .izquierda{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    gap:25px;
-    align-items:start;
+display:grid;
+grid-template-columns:repeat(2,minmax(300px,1fr));
+gap:30px;
 }
 
 .derecha{
-display:flex;
-flex-direction:column;
-gap:20px;
+position:sticky;
+top:100px;
+height:max-content;
 }
 
 .card{
@@ -140,10 +139,9 @@ font-weight:bold;
 
 .contenido{
 display:grid;
-grid-template-columns:4fr 1.3fr;
+grid-template-columns:5fr 1fr;
 }
-
-}
+    
 </style>
 
 </head>
