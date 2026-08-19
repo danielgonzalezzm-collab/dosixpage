@@ -12,7 +12,32 @@ margin:0;
 padding:0;
 box-sizing:border-box;
 }
+.top-menu{
+position:fixed;
+top:0;
+left:0;
+width:100%;
 
+background:rgba(0,0,0,.8);
+
+padding:15px;
+
+display:flex;
+justify-content:center;
+gap:30px;
+
+z-index:9999;
+}
+
+.top-menu a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.top-menu a:hover{
+color:#D9A414;
+}
 body{
 background:#050505;
 color:white;
@@ -115,7 +140,17 @@ grid-template-columns:4fr 1.3fr;
 </head>
 
 <body>
+<nav class="top-menu">
 
+<a href="#musica">Música</a>
+
+ch</a>
+
+#galeriaGalería</a>
+
+#contrataciones>
+
+</nav>
 <section class="hero">
 
 <div class="overlay">
@@ -137,7 +172,7 @@ Del cuaderno al escenario
 <div class="izquierda">
 
 <div class="card">
-<h2>Música</h2>
+<h2 id="musica">Música</h2>
 <p>
 La música de DOSIX transforma cartas,
 poemas y experiencias personales en canciones.
@@ -145,7 +180,7 @@ poemas y experiencias personales en canciones.
 </div>
 
 <div class="card">
-<h2>Discografía</h2>
+<h2 id="discografia">Discografía</h2>
 
 <p>Partidario de lo Efímero</p>
 <p>Metamorphosix</p>
@@ -158,12 +193,12 @@ poemas y experiencias personales en canciones.
 </div>
 
 <div class="card">
-<h2>Galería</h2>
+<h2 id="galeria">Galería</h2>
 <p>Fotografías y contenido visual oficial.</p>
 </div>
 
 <div class="card">
-<h2>Merch</h2>
+<h2 id="merch">Merch</h2>
 
 <p>Hoodie DOSIX</p>
 <p>Camiseta DOSIX</p>
@@ -189,7 +224,7 @@ Escuchar Ahora
 
 <div class="card">
 
-<h2>Contrataciones</h2>
+<h2 id="contrataciones">Contrataciones</h2>
 
 <p>3028421428</p>
 
