@@ -187,12 +187,47 @@ font-weight:bold;
 display:grid;
 grid-template-columns:5fr 1fr;
 }
+
+.menu-btn{
+    position:fixed;
+    top:25px;
+    right:25px;
+
+    width:60px;
+    height:60px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:rgba(0,0,0,.75);
+
+    color:#D9A414;
+
+    border:1px solid #D9A414;
+
+    border-radius:12px;
+
+    font-size:32px;
+
+    cursor:pointer;
+
+    z-index:9999;
+}
+
+.menu-btn:hover{
+    background:#D9A414;
+    color:black;
+}
     
 </style>
 
 </head>
 
 <body>
+<div class="menu-btn">
+☰
+</div>
 <nav class="top-menu">
 
 </nav>
