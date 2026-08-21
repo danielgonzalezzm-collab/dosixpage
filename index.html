@@ -189,6 +189,28 @@ grid-template-columns:5fr 1fr;
 }
 
 .menu-btn{
+.menu-panel{
+    margin-top:15px;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+}
+.menu-panel p{
+    margin:0;
+    cursor:pointer;
+    color:white;
+}
+.menu-panel p:hover{
+    color:#D9A414;
+}
+summary{
+    list-style:none;
+    cursor:pointer;
+}
+
+summary::-webkit-details-marker{
+    display:none;
+}
     position:fixed;
     top:25px;
     right:25px;
@@ -225,9 +247,26 @@ grid-template-columns:5fr 1fr;
 </head>
 
 <body>
-<div class="menu-btn">
-☰
+<details class="menu-btn">
+
+<summary>☰</summary>
+
+<div class="menu-panel">
+
+<p>Música</p>
+
+<p>Discografía</p>
+
+<p>Merch</p>
+
+<p>Galería</p>
+
+<p>Contrataciones</p>
+
 </div>
+
+</details>
+
 <nav class="top-menu">
 
 </nav>
