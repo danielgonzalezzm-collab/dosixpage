@@ -105,20 +105,19 @@ margin-top:20px;
     transform:translateY(10px);
 }
 .contenido{
-display:grid;
-grid-template-columns:3fr 1.2fr;
-gap:40px;
-padding:40px;
-max-width:1800px;
-margin:auto;
+    display:grid;
+    grid-template-columns:4fr 1.3fr;
+    gap:40px;
+    padding:40px;
+    max-width:1800px;
+    margin:auto;
 }
 
 .izquierda{
-display:grid;
-grid-template-columns:repeat(2,minmax(300px,1fr));
-gap:30px;
+    display:grid;
+    grid-template-columns:repeat(2,minmax(300px,1fr));
+    gap:30px;
 }
-
 .derecha{
 position:sticky;
 top:100px;
@@ -135,9 +134,7 @@ height:max-content;
     border:1px solid #2a2a2a;
     transition:.3s;
     cursor:pointer;
-}
-    cursor:pointer;
-overflow:hidden;
+    overflow:hidden;
 }
 
 .card h2{
@@ -204,18 +201,20 @@ grid-template-columns:5fr 1fr;
     flex-direction:column;
     gap:12px;
 }
-.menu-panel p{
+.menu-panel a{
     margin:0;
     color:white;
-    cursor:pointer;
+    text-decoration:none;
     padding:10px;
     border-radius:8px;
     transition:.3s;
 }
-.menu-panel p:hover{
+    
+.menu-panel a:hover{
     color:#D9A414;
     background:#222;
 }
+    
 summary{
     list-style:none;
     cursor:pointer;
@@ -360,7 +359,7 @@ convertidas en música.
 
 <div class="icono">🎵</div>
 
-<h2>🎵 Música</h2>
+<h2 id="musica">🎵 Música</h2>
 
 <p>▶ Escuchar ahora</p>
 
@@ -368,19 +367,19 @@ convertidas en música.
 
 <div class="card">
 <div class="icono">💿</div>
-<h2>💿 Discografía</h2>
+<h2 id="discografia">💿 Discografía</h2>
 <p>◉ Ver lanzamientos</p>
 </div>
 
 <div class="card">
 <div class="icono">📷</div>
-<h2>📷 Galería</h2>
+<h2 id="galeria">📷 Galería</h2>
 <p>▣ Explorar imágenes</p>
 </div>
 
 <div class="card">
 <div class="icono">👕</div>
-<h2>👕 Merch</h2>
+<h2 id="merch">👕 Merch</h2>
 <p>✦ Ver colección</p>
 </div>
 
