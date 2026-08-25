@@ -359,16 +359,21 @@ iframe{
     grid-template-columns:1fr !important;
 }
 
-.izquierda{
-    display:block !important;
+.contenido{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr;
+    gap:20px;
+    max-width:1400px;
+    margin:auto;
+    padding:40px;
 }
 
-.derecha{
-    display:block !important;
-}
-.izquierda,
-.derecha{
-    display:block;
+.columna-izquierda,
+.columna-centro,
+.columna-derecha{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
 }
 
 .card{
@@ -480,8 +485,31 @@ convertidas en música.
 </section>
 
 <section id="contenido" class="contenido">
-<div class="izquierda">
+<<div class="columna-izquierda">
 
+    Música
+
+    Merch
+
+    Galería
+
+</div>
+
+<div class="columna-centro">
+
+    Redes
+
+</div>
+
+<div class="columna-derecha">
+
+    Spotify
+
+    Discografía
+
+    Contrataciones
+
+</div>
 <div class="card musica-card">
 
 <div class="icono">🎵</div>
@@ -534,8 +562,6 @@ target="_blank">
 <li>Poemario DOSIX</li>
 <li>Póster edición limitada</li>
 </ul>
-
-</div>
 
 </div>
 
