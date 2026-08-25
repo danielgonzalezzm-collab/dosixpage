@@ -110,10 +110,10 @@ margin-top:20px;
 .contenido{
     display:grid;
     grid-template-columns:1fr 1fr 1fr;
-    gap:40px;
-    padding:40px;
-    max-width:1800px;
+    gap:20px;
+    max-width:1400px;
     margin:auto;
+    padding:40px;
 }
 
 .izquierda{
@@ -398,6 +398,33 @@ iframe{
 iframe{
     height:300px;
 }
+.musica-card{
+    grid-column:1;
+}
+
+.redes-card{
+    grid-column:2;
+}
+
+.spotify-card{
+    grid-column:3;
+}
+
+.merch-card{
+    grid-column:1;
+}
+
+.discografia-card{
+    grid-column:3;
+}
+
+.galeria-card{
+    grid-column:1;
+}
+
+.contrataciones-card{
+    grid-column:3;
+}
 </style>
 
 </head>
@@ -448,7 +475,7 @@ convertidas en música.
 <section id="contenido" class="contenido">
 <div class="izquierda">
 
-<div class="card">
+<div class="card musica-card">
 
 <div class="icono">🎵</div>
 
@@ -468,7 +495,7 @@ target="_blank">
 ▶ YouTube
 </a>
 
-<div class="card">
+<div class="card redes-card">
 
 <h2>🌐 Redes</h2>
 
@@ -486,7 +513,7 @@ target="_blank">
 📘 Facebook
 </a>
 
-<div class="card">
+<div class="card merch-card">
 
 <div class="icono">👕</div>
 
@@ -505,7 +532,7 @@ target="_blank">
 
 </div>
 
-<div class="card">
+<div class="card discografia-card">
 
 <div class="icono">💿</div>
 
@@ -518,7 +545,7 @@ target="_blank">
   
 </div>
 
-<div class="card">
+<div class="card galeria-card">
 
 <div class="icono">📷</div>
 
@@ -537,7 +564,7 @@ target="_blank">
 
 <div class="derecha">
 
-<div class="card">
+<div class="card spotify-card">
 <h2>Spotify</h2>
 
 <iframe
@@ -551,7 +578,7 @@ allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-pictur
 
 </div>
 
-<div class="card">
+<div class="card contrataciones-card">
 
 <h2 id="contrataciones">Contrataciones</h2>
 
